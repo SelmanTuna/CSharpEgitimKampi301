@@ -9,8 +9,7 @@ using System.Threading.Tasks;
 namespace EgitimKampi301.DataAccessLayer.Context
 {
     public class CampContext:DbContext 
-    { 
-        //veri tabanı adresi eklemek
+    {        
 
         public DbSet<Category> Categories { get; set; }
         public DbSet<Product> Products { get; set; }

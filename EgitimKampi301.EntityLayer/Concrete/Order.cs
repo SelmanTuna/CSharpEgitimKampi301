@@ -10,11 +10,11 @@ namespace EgitimKampi301.EntityLayer.Concrete
     {
         public int OrderId { get; set; }
         public int ProductId { get; set; }
-        public Product Product { get; set; } // code first yaklaşımında bire-çok ilişiye göre bir order da bir çok ürün olabilir.
+        public  virtual Product Product { get; set; } // code first yaklaşımında bire-çok ilişiye göre bir order da bir çok ürün olabilir.
         public int Quantity { get; set; }
         public decimal UnitPrice { get; set; }
         public decimal TotalPrice { get; set; }
         public int CustomerId { get; set; } // bire-çok ilişkide bir sipariş de bir çok müşteri olabilir.
-        public virtual Customer Customers{ get; set; }
+        public virtual Customer Customer{ get; set; } 
     }
 }

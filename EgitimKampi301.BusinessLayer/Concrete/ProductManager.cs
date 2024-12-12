@@ -18,6 +18,11 @@ namespace EgitimKampi301.BusinessLayer.Concrete
             _productDal = productDal;
         }
 
+        public List<Object> TGetProductsWithCategory()
+        {
+            return _productDal.GetProductsWithCategory(); 
+        }
+
         public void TDelete(Product entity)
         {
             _productDal.Delete(entity);
